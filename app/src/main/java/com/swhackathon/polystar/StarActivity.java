@@ -82,10 +82,7 @@ public class StarActivity extends AppCompatActivity {
         TextView textName = findViewById(R.id.textName);
         TextView textId = findViewById(R.id.textId);
 
-        textName.setTextSize(20);
-        textName.setText(loginName);
-
-        textId.setTextSize(20);
-        textId.setText(loginId);
+        textName.setText("이름: " + loginName);
+        textId.setText("닉네임: " + loginId);
     }
 }
