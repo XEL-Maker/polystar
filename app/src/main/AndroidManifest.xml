@@ -9,18 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PolyStar">
-        <activity android:name=".StarQuestionActivity"></activity>
-        <activity android:name=".InputActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".JoinActivity" />
-        <activity android:name=".CalanderActivity"/>
+
         <activity android:name=".IntroActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+        <activity android:name=".StarQuestionActivity"/>
+        <activity android:name=".InputActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".JoinActivity"/>
+        <activity android:name=".CalanderActivity"/>
     </application>
 
 </manifest>

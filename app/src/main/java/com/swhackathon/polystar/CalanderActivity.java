@@ -13,12 +13,6 @@ public class CalanderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calander);
 
-
-        //타이틀바 삭제 시작
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-        //타이틀바 삭제 종료
-
         //네비게이션 바 버튼
         //홈버튼
         ImageButton home = (ImageButton) findViewById(R.id.homeButton1);

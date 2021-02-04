@@ -11,10 +11,6 @@ public class InputActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
-        //타이틀바 삭제 시작
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-        //타이틀바 삭제 종료
 
         //네비게이션 바 버튼
         //홈버튼

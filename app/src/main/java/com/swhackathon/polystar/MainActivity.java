@@ -2,22 +2,20 @@ package com.swhackathon.polystar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //타이틀바 삭제 시작
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-        //타이틀바 삭제 종료
-
-
 
         //네비게이션 바 버튼
         //홈버튼
@@ -70,6 +68,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // 임시용 로그아웃 버튼
+        Button logout = (Button)findViewById(R.id.logout);
+        logout.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, JoinActivity.class);
+                startActivity(intent);
+                SharedPreferences auto = getSharedPreferences("auto", Activity.MODE_PRIVATE);
+                SharedPreferences.Editor editor = auto.edit();
+                editor.clear();
+                editor.commit();
+                Toast.makeText(MainActivity.this, "로그아웃.", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
     }
 }
