@@ -47,19 +47,21 @@
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <TextView
+
+    <EditText
         android:id="@+id/resultTxt"
-        android:layout_width="313dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="188dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:background="@null"
         android:gravity="center_horizontal"
-        android:text="이곳에 내용을 입력해주세요"
+        android:hint="이곳에 내용을 입력해주세요"
         android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/homeButton1"
         android:layout_width="68dp"
