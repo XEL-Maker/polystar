@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
+
 public class StarActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
