@@ -6,15 +6,15 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
-public class InputActivity extends AppCompatActivity {
+public class StarActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_input);
+        setContentView(R.layout.activity_star);
 
         //네비게이션 바 버튼
         //홈버튼
-        ImageButton home = (ImageButton) findViewById(R.id.homeButton);
+        ImageButton home = (ImageButton) findViewById(R.id.homeButton2);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,7 +24,7 @@ public class InputActivity extends AppCompatActivity {
         });
 
         //별의 기억버튼
-        ImageButton memory = (ImageButton) findViewById(R.id.memoryButton);
+        ImageButton memory = (ImageButton) findViewById(R.id.memoryButton2);
         memory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,7 +34,7 @@ public class InputActivity extends AppCompatActivity {
         });
 
         //별자리버튼
-        ImageButton star = (ImageButton) findViewById(R.id.starButton);
+        ImageButton star = (ImageButton) findViewById(R.id.starButton2);
         star.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,7 +44,7 @@ public class InputActivity extends AppCompatActivity {
         });
 
         //즐겨찾기버튼
-        ImageButton like = (ImageButton) findViewById(R.id.likeButton);
+        ImageButton like = (ImageButton) findViewById(R.id.likeButton2);
         like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
