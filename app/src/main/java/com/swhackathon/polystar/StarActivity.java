@@ -1,13 +1,21 @@
 package com.swhackathon.polystar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class StarActivity extends AppCompatActivity {
+
+    String loginName, loginId;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,5 +72,19 @@ public class StarActivity extends AppCompatActivity {
             }
         });
 
+        //프로필 정보 출력
+        SharedPreferences auto = getSharedPreferences("auto", Activity.MODE_PRIVATE);
+
+        loginName = auto.getString("inputName", null);
+        loginId = auto.getString("inputId", null);
+
+        TextView textName = findViewById(R.id.textName);
+        TextView textId = findViewById(R.id.textId);
+
+        textName.setTextSize(20);
+        textName.setText(loginName);
+
+        textId.setTextSize(20);
+        textId.setText(loginId);
     }
 }
