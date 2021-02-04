@@ -37,7 +37,7 @@
             android:layout_width="250dp"
             android:layout_height="200dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             app:srcCompat="@drawable/main_2" />
         <!--
             android:background="@null" <- 화살표 배경제거

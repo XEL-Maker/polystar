@@ -34,6 +34,7 @@ public class JoinActivity extends AppCompatActivity {
 
         // 이전 로그인 아이디가 남아있을 경우 (loginId != null)
         if (loginName != null && loginId != null) {
+            //                                                           자동로그인
             Intent intent = new Intent(JoinActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
