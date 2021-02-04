@@ -22,7 +22,6 @@ public class StarActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_star);
-        //TextView textView=(TextView)findViewById(R.id.textName)
         //네비게이션 바 버튼
         //홈버튼
         ImageButton home2 = (ImageButton) findViewById(R.id.homeButton2);
