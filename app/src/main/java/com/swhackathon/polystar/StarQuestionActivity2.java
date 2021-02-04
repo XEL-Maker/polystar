@@ -17,7 +17,7 @@ public class StarQuestionActivity2 extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), JoinActivity.class);
+                Intent intent = new Intent(getApplicationContext(), StarQuestionActivity3.class);
                 startActivity(intent);
             }
         });
