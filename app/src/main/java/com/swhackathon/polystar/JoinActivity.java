@@ -50,7 +50,8 @@ public class JoinActivity extends AppCompatActivity {
                     autoLogin.putString("inputName", name.getText().toString());
                     autoLogin.commit();
                     Toast.makeText(JoinActivity.this, "아이디(" + id.getText().toString() + ")님 환영합니다. 이름(" + name.getText().toString() + ")", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(JoinActivity.this, MainActivity.class);
+                    //                                                           가이드라인 이동용
+                    Intent intent = new Intent(JoinActivity.this, StarQuestionActivity2.class);
                     startActivity(intent);
                     finish();
                 }
