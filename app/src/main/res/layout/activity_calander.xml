@@ -11,7 +11,7 @@
 
 
     <ImageButton
-        android:id="@+id/preButton"
+        android:id="@+id/prepre"
         android:layout_width="30dp"
         android:layout_height="34dp"
         android:background="@null"
@@ -277,6 +277,63 @@
         </TableRow>
 
     </TableLayout>
+
+
+    <ImageButton
+        android:id="@+id/homeButton1"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/memoryButton1"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/likeButton1"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/starButton1"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/nav_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
