@@ -40,6 +40,22 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="30dp"
                 app:srcCompat="@drawable/question1" />
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/button_" />
         </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/progress2" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
