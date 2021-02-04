@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/question1bg"
-    tools:context=".StarQuestionActivity2">
+    android:background="@drawable/starmemorybg"
+    tools:context=".StarQuestionActivity3">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,20 +26,39 @@
 
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/imageView8"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                app:srcCompat="@drawable/question1circle" />
+                app:srcCompat="@drawable/questioncircle2" />
+
             <ImageView
-                android:id="@+id/imageView17"
+                android:id="@+id/imageView16"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginRight="30dp"
-                app:srcCompat="@drawable/question1" />
+                app:srcCompat="@drawable/starquestiontxt" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/button_" />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/progress3" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
