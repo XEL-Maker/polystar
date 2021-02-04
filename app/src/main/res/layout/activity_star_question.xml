@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,9 +16,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="425dp"
-            android:layout_marginTop="190dp"
+            android:layout_height="400dp"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="190dp"
             android:layout_marginRight="40dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/center_"
@@ -32,14 +31,27 @@
                 android:layout_height="125dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="25dp"
-                app:srcCompat="@drawable/squarecircle" />
+                app:srcCompat="@drawable/squareCircle" />
 
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
                 app:srcCompat="@drawable/starquestiontxt" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/button_" />
         </LinearLayout>
 
         <ImageView
@@ -47,6 +59,6 @@
             android:layout_width="300dp"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/progress3of4" />
+            app:srcCompat="@drawable/progress3" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
