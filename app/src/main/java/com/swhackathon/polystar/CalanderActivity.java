@@ -55,7 +55,7 @@ public class CalanderActivity extends AppCompatActivity {
         });
 
         //뒤로가기 버튼
-        ImageButton back = (ImageButton) findViewById(R.id.backButton);
+        ImageButton back = (ImageButton) findViewById(R.id.backButton1);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

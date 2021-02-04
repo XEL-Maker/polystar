@@ -8,20 +8,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
     <ImageButton
-        android:id="@+id/backButton"
+        android:id="@+id/backButton1"
         android:layout_width="30dp"
         android:layout_height="34dp"
         android:background="@null"
         android:scaleType="fitCenter"
         android:src="@drawable/mdpi29"
         app:layout_constraintBottom_toBottomOf="@+id/homeButton"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="@+id/profile_input"
         app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/profile_input"
         android:layout_width="34dp"
         android:layout_height="34dp"
         android:background="@null"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/questionTxt"
         android:layout_width="343dp"
         android:layout_height="23dp"
         android:layout_marginTop="156dp"
@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/resultTxt"
         android:layout_width="313dp"
         android:layout_height="23dp"
         android:layout_marginTop="188dp"
@@ -61,7 +61,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <ImageButton
-        android:id="@+id/homeButton"
+        android:id="@+id/homeButton1"
         android:layout_width="68dp"
         android:layout_height="50dp"
         android:background="@null"
@@ -75,7 +75,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/memoryButton"
+        android:id="@+id/memoryButton1"
         android:layout_width="68dp"
         android:layout_height="50dp"
         android:background="@null"
@@ -89,7 +89,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/likeButton"
+        android:id="@+id/likeButton1"
         android:layout_width="68dp"
         android:layout_height="50dp"
         android:background="@null"
@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
-        android:id="@+id/starButton"
+        android:id="@+id/starButton1"
         android:layout_width="68dp"
         android:layout_height="50dp"
         android:background="@null"
@@ -132,7 +132,7 @@
         app:layout_constraintVertical_bias="0.136" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/reButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@null"
@@ -147,7 +147,7 @@
         app:layout_constraintVertical_bias="0.847" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/checkButton"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@null"

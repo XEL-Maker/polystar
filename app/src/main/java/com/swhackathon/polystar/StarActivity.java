@@ -14,8 +14,8 @@ public class StarActivity extends AppCompatActivity {
 
         //네비게이션 바 버튼
         //홈버튼
-        ImageButton home = (ImageButton) findViewById(R.id.homeButton2);
-        home.setOnClickListener(new View.OnClickListener() {
+        ImageButton home2 = (ImageButton) findViewById(R.id.homeButton2);
+        home2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -24,8 +24,8 @@ public class StarActivity extends AppCompatActivity {
         });
 
         //별의 기억버튼
-        ImageButton memory = (ImageButton) findViewById(R.id.memoryButton2);
-        memory.setOnClickListener(new View.OnClickListener() {
+        ImageButton memory2 = (ImageButton) findViewById(R.id.memoryButton2);
+        memory2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CalanderActivity.class);
@@ -34,8 +34,8 @@ public class StarActivity extends AppCompatActivity {
         });
 
         //별자리버튼
-        ImageButton star = (ImageButton) findViewById(R.id.starButton2);
-        star.setOnClickListener(new View.OnClickListener() {
+        ImageButton star2 = (ImageButton) findViewById(R.id.starButton2);
+        star2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), StarActivity.class);
@@ -44,8 +44,8 @@ public class StarActivity extends AppCompatActivity {
         });
 
         //즐겨찾기버튼
-        ImageButton like = (ImageButton) findViewById(R.id.likeButton2);
-        like.setOnClickListener(new View.OnClickListener() {
+        ImageButton like2 = (ImageButton) findViewById(R.id.likeButton2);
+        like2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -54,8 +54,8 @@ public class StarActivity extends AppCompatActivity {
         });
 
         //뒤로가기 버튼
-        ImageButton back = (ImageButton) findViewById(R.id.backButton);
-        back.setOnClickListener(new View.OnClickListener() {
+        ImageButton back2 = (ImageButton) findViewById(R.id.backButton2);
+        back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
