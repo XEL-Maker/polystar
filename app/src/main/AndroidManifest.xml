@@ -9,16 +9,14 @@
         android:roundIcon="@mipmap/applogov2_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-
+        <activity android:name=".MainActivity4"></activity>
         <activity android:name=".IntroActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity android:name=".JoinActivity" />
         <activity android:name=".StarQuestionActivity2" />
         <activity android:name=".StarQuestionActivity3" />
