@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 public class MainActivity2 extends AppCompatActivity {
     boolean[] starLine={false,false,false,false,false};
+    boolean allstar=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,6 +118,27 @@ public class MainActivity2 extends AppCompatActivity {
                     star1.setImageResource(0);
                     starLine[4]=false;
                 }
+            }
+        });
+        ImageButton trashcan=findViewById(R.id.trashcan);
+        trashcan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageView star1=findViewById(R.id.starLine1);
+                ImageView star2=findViewById(R.id.starLine2);
+                ImageView star3=findViewById(R.id.starLine3);
+                ImageView star4=findViewById(R.id.starLine4);
+                ImageView star5=findViewById(R.id.starLine5);
+                starLine[0]=false;
+                starLine[1]=false;
+                starLine[2]=false;
+                starLine[3]=false;
+                starLine[4]=false;
+                star1.setImageResource(0);
+                star2.setImageResource(0);
+                star3.setImageResource(0);
+                star4.setImageResource(0);
+                star5.setImageResource(0);
             }
         });
     }
