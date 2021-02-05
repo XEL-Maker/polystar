@@ -45,14 +45,14 @@ public class BookmarkActivity extends AppCompatActivity {
         });
 
         //즐겨찾기버튼
-        ImageButton like = (ImageButton) findViewById(R.id.likeButton);
+        /*ImageButton like = (ImageButton) findViewById(R.id.likeButton);
         like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), BookmarkActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         // 사용자정보 가기 버튼
         ImageButton profile_input = (ImageButton) findViewById(R.id.profile_input2);
