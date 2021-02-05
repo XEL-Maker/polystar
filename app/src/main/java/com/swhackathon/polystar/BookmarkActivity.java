@@ -63,5 +63,15 @@ public class BookmarkActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 뒤로가기 버튼
+        ImageButton imageButton2 = findViewById(R.id.imageButton2);
+        imageButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

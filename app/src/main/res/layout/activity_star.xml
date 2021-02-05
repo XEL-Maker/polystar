@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".StarActivity"
     android:background="@drawable/a10">
+
     <ImageButton
         android:id="@+id/backButton2"
         android:layout_width="32dp"
