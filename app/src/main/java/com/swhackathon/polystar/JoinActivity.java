@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -22,7 +21,6 @@ public class JoinActivity extends AppCompatActivity {
     EditText name, id;
     ImageButton loginBtn;
     String loginName, loginId;
-
     ImageButton imageEdit;
     ImageView imageProfile;
 
