@@ -7,11 +7,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-<<<<<<< HEAD
-import android.net.Uri;
-=======
-import android.graphics.drawable.BitmapDrawable;
->>>>>>> 2026f1a95f495d44e21db5cccb65e08e7443cfef
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -71,7 +66,7 @@ public class JoinActivity extends AppCompatActivity {
         }
 
         // 갤러리 구현
-        imageProfile = (ImageView) findViewById(R.id.imageProfile);
+        imageProfile = (ImageView) findViewById(R.id.imageView5);
         imageEdit = (ImageButton) findViewById(R.id.imageEdit);
 
         imageEdit.setOnClickListener(new View.OnClickListener() {
