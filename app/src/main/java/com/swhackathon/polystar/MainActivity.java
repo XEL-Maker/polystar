@@ -34,15 +34,15 @@ public class MainActivity extends AppCompatActivity {
 
         //네비게이션 바 버튼
         //홈버튼
-        /*ImageButton home = (ImageButton) findViewById(R.id.homeButton);
+        ImageButton home = (ImageButton) findViewById(R.id.homeButton);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
                 startActivity(intent);
 
             }
-        });*/
+        });
 
         //별의 기억버튼
         ImageButton memory = (ImageButton) findViewById(R.id.memoryButton);
