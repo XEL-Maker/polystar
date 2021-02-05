@@ -82,22 +82,5 @@ public class MainActivity3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        // 임시용 로그아웃 버튼
-        Button logout = (Button)findViewById(R.id.logout);
-        logout.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity3.this, JoinActivity.class);
-                startActivity(intent);
-                SharedPreferences auto = getSharedPreferences("auto", Activity.MODE_PRIVATE);
-                SharedPreferences.Editor editor = auto.edit();
-                editor.clear();
-                editor.commit();
-                Toast.makeText(MainActivity3.this, "로그아웃.", Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        });
     }
 }

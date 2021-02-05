@@ -25,6 +25,7 @@
         <activity android:name=".StarQuestionActivity4" />
         <activity android:name=".MainActivity" />
         <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity3" />
         <activity android:name=".InputActivity" />
         <activity android:name=".CalanderActivity" />
         <activity android:name=".StarActivity" />
