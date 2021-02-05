@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class InputActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -83,8 +85,21 @@ public class InputActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                EditText editText = findViewById(R.id.resultTxt);
-                editText.setText("");
+                TextView questionTxt = findViewById(R.id.questionTxt);
+                EditText resultTxt = findViewById(R.id.resultTxt);
+                // 질문 새로고침 db코드작성
+                resultTxt.setText("");
+            }
+        });
+
+        //완료버튼
+        ImageButton checkButton = (ImageButton) findViewById(R.id.checkButton);
+        checkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //db
+
             }
         });
     }
