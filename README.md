@@ -25,6 +25,10 @@
 그들은 저마다 자신만의 나침반을 가슴에 담고 있습니다.<br>
 </p>
 
+## 어플리케이션 미리보기 !~!
+![first](./image/first.png)
+![third](./image/third.png)
+
 ## 프로젝트 개발 동기
 <dl>
   <dd>
@@ -46,7 +50,3 @@
   |팀원|SW개발|<a href = "http://tusw.tu.ac.kr"><img src="https://swhackathon.com/image/university_12.png"></a>|김현호|
   |팀원|SW개발|<a href = "http://computer.hanyang.ac.kr/"><img src="https://swhackathon.com/image/university_39.png"></a>|강태연|
   |팀원|디자인|<a href = "https://aisw.dongseo.ac.kr/main/main.html"><img src="https://swhackathon.com/image/university_13.png"></a>|권민재|
-
-## 어플리케이션 미리보기 !~!
-![first](./image/first.png)
-![third](./image/third.png)
