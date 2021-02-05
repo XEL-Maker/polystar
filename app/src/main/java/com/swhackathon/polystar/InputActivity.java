@@ -6,7 +6,10 @@ import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
 public class InputActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,5 +77,15 @@ public class InputActivity extends AppCompatActivity {
             }
         });
 
+        // 질문 새로고침
+        ImageButton reButton = (ImageButton) findViewById(R.id.reButton);
+        reButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                EditText editText = findViewById(R.id.resultTxt);
+                editText.setText("");
+            }
+        });
     }
 }
