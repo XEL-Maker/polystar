@@ -90,8 +90,8 @@ public class StarActivity extends AppCompatActivity {
         TextView textName = findViewById(R.id.textName);
         TextView textId = findViewById(R.id.textId);
 
-        textName.setText("이름: " + loginName);
-        textId.setText("닉네임: " + loginId);
+        textName.setText(loginName);
+        textId.setText("@ " + loginId);
 
         // 갤러리 구현
         imageProfile = (ImageView) findViewById(R.id.imageView18);
