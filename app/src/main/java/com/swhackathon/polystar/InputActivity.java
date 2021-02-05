@@ -2,6 +2,7 @@ package com.swhackathon.polystar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -59,6 +60,16 @@ public class InputActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 사용자정보 가기 버튼
+        ImageButton profile_input = (ImageButton) findViewById(R.id.profile_input);
+        profile_input.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), StarActivity.class);
                 startActivity(intent);
             }
         });
