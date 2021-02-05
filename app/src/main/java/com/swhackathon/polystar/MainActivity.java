@@ -1,6 +1,7 @@
 package com.swhackathon.polystar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+
             }
         });*/
 
@@ -98,5 +100,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }
