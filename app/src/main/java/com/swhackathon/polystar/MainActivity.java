@@ -19,7 +19,6 @@ import java.util.Date;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         //네비게이션 바 버튼
         //홈버튼
-        ImageButton home = (ImageButton) findViewById(R.id.homeButton);
+        /*ImageButton home = (ImageButton) findViewById(R.id.homeButton);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });
+        });*/
 
         //별의 기억버튼
         ImageButton memory = (ImageButton) findViewById(R.id.memoryButton);
