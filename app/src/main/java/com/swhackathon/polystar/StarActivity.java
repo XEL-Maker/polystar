@@ -44,14 +44,14 @@ public class StarActivity extends AppCompatActivity {
         });
 
         //별자리버튼
-        ImageButton star2 = (ImageButton) findViewById(R.id.starButton2);
+        /*ImageButton star2 = (ImageButton) findViewById(R.id.starButton2);
         star2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), StarActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         //즐겨찾기버튼
         ImageButton like2 = (ImageButton) findViewById(R.id.likeButton2);

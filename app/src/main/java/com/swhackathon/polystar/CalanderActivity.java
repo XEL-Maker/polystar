@@ -25,14 +25,14 @@ public class CalanderActivity extends AppCompatActivity {
         });
 
         //별의 기억버튼
-        ImageButton memory = (ImageButton) findViewById(R.id.memoryButton1);
+        /*ImageButton memory = (ImageButton) findViewById(R.id.memoryButton1);
         memory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CalanderActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         //별자리버튼
         ImageButton star = (ImageButton) findViewById(R.id.starButton1);
