@@ -73,5 +73,20 @@ public class BookmarkActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        /*
+        * 질문 연결하기
+        * */
+        ImageButton imageButton3 = findViewById(R.id.imageButton3);
+        imageButton2.setOnClickListener(new View.OnClㅈickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), InputActivity.class);
+                //질문페이지로 연결
+                intent.putExtra("질문","좋아하는");
+                intent.putExtra("답","답");
+                startActivity(intent);
+            }
+        });
     }
 }
