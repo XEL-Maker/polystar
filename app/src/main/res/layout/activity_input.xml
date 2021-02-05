@@ -38,14 +38,15 @@
         android:id="@+id/questionTxt"
         android:layout_width="343dp"
         android:layout_height="23dp"
-        android:layout_marginTop="172dp"
         android:gravity="center_horizontal"
         android:text="좋아하는 물건과 그 이유는 무엇인가요?"
         android:textColor="#ffffff"
         android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224" />
 
     <EditText
         android:id="@+id/resultTxt"
