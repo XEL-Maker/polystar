@@ -47,6 +47,6 @@
   |팀원|SW개발|<a href = "http://computer.hanyang.ac.kr/"><img src="https://swhackathon.com/image/university_39.png"></a>|강태연|
   |팀원|디자인|<a href = "https://aisw.dongseo.ac.kr/main/main.html"><img src="https://swhackathon.com/image/university_13.png"></a>|권민재|
 
-## 어플리케이션 화면
+## 어플리케이션 미리보기 !~!
 ![first](./image/first.png)
-![second](./image/second.png)
+![third](./image/third.png)

@@ -65,7 +65,7 @@
     <ImageButton
         android:id="@+id/trashcan"
         android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:background="@null"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,7 +79,7 @@
     <ImageButton
         android:id="@+id/StarButton1"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="172dp"
         android:background="@null"
@@ -91,7 +91,7 @@
     <ImageButton
         android:id="@+id/StarButton2"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginStart="120dp"
         android:layout_marginBottom="172dp"
         android:background="@null"
@@ -103,7 +103,7 @@
     <ImageButton
         android:id="@+id/StarButton3"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="172dp"
         android:background="@null"
         android:scaleType="fitXY"
@@ -116,7 +116,7 @@
     <ImageButton
         android:id="@+id/StarButton4"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="124dp"
         android:layout_marginBottom="172dp"
         android:background="@null"
@@ -128,7 +128,7 @@
     <ImageButton
         android:id="@+id/StarButton5"
         android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="172dp"
         android:background="@null"
