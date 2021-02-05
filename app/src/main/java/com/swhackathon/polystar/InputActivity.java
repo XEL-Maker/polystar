@@ -1,23 +1,83 @@
 package com.swhackathon.polystar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.service.autofill.OnClickAction;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Calendar;
+
 public class InputActivity extends AppCompatActivity {
+
+    //파일입력에 필요한 변수
+
+    String filename;
+    EditText result;
+    ImageButton checkButton;
+    int questionCount;
+    Calendar cal;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input);
+
+
+        //몇번째 질문인지 확인하는 변수
+        questionCount = 1;
+
+        checkButton = findViewById(R.id.checkButton);
+        result = findViewById(R.id.resultTxt);
+        cal = Calendar.getInstance();
+        int year = cal.get(Calendar.YEAR);
+        int month = cal.get(Calendar.MONTH);
+        int day = cal.get(Calendar.DAY_OF_MONTH);
+        String s = "hello";
+
+
+        filename = Integer.toString(year) + "_" + Integer.toString(month) + "_" + Integer.toString(day) + "_" + Integer.toString(questionCount);
+        String str = readDiary(filename);
+        result.setText(str);
+        questionCount = questionCount + 1;
+
+
+        //완료버튼 누를 시 파일에 입력값 입력
+        checkButton.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    FileOutputStream outFs = openFileOutput(filename, Context.MODE_PRIVATE);
+                    String str = result.getText().toString();
+                    outFs.write(s.getBytes());
+                    outFs.write(str.getBytes());
+                    outFs.close();
+                    Toast.makeText(InputActivity.this, filename + "이 저장", Toast.LENGTH_SHORT).show();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+
+
+
 
         //네비게이션 바 버튼
         //홈버튼
@@ -94,7 +154,7 @@ public class InputActivity extends AppCompatActivity {
         });
 
         //완료버튼
-        ImageButton checkButton = (ImageButton) findViewById(R.id.checkButton);
+        /*ImageButton checkButton = (ImageButton) findViewById(R.id.checkButton);
         checkButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -102,10 +162,10 @@ public class InputActivity extends AppCompatActivity {
                 //db
 
             }
-        });
+        });*/
         /*
-        * intent 불러오기
-        * */
+         * intent 불러오기
+         * */
         Intent intent= getIntent();
         if(intent.hasExtra("질문")) {
             String qmsg = intent.getStringExtra("질문");
@@ -116,5 +176,25 @@ public class InputActivity extends AppCompatActivity {
             atextView.setText(amsg);
         }
 
+    }
+
+    //파일을 출력하는 함..수?
+    private String readDiary(String filename) {
+        String diaryStr = null;
+        FileInputStream inFs;
+        try {
+            inFs = openFileInput(filename);
+
+            byte[] txt = new byte[500];
+            inFs.read(txt);
+            inFs.close();
+            diaryStr = (new String(txt)).trim();
+
+        }catch (IOException e){
+            result.setHint("답을 입력해 주세요");
+
+        }
+
+        return diaryStr;
     }
 }
