@@ -78,7 +78,7 @@ public class BookmarkActivity extends AppCompatActivity {
         * 질문 연결하기
         * */
         ImageButton imageButton3 = findViewById(R.id.imageButton3);
-        imageButton2.setOnClickListener(new View.OnClㅈickListener() {
+        imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), InputActivity.class);
