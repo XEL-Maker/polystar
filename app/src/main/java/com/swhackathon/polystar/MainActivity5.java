@@ -13,12 +13,12 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class MainActivity4 extends AppCompatActivity {
+public class MainActivity5 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main4);
+        setContentView(R.layout.activity_main5);
         //날짜 출력
         Date currentTime = Calendar.getInstance().getTime();
         String date = new SimpleDateFormat("MM月 / dd日", Locale.getDefault()).format(currentTime);
@@ -33,7 +33,7 @@ public class MainActivity4 extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity5.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
 
             }
