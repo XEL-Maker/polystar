@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#180E44"
+    tools:context=".BookmarkActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="170dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mdpi29" />
+
+            <ImageButton
+                android:id="@+id/profile_input2"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/mdpi30" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="당신이 가장 좋아하는 질문을 모아봤어요"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="430dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#21215B"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="65dp"
+
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/nav_4" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="65dp"
+
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/nav_1" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="65dp"
+
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/nav_3" />
+
+            <ImageButton
+                android:id="@+id/imageButton11"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/nav_2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
