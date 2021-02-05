@@ -1,6 +1,7 @@
 package com.swhackathon.polystar;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,6 +19,7 @@ import java.util.Date;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,14 +35,15 @@ public class MainActivity extends AppCompatActivity {
 
         //네비게이션 바 버튼
         //홈버튼
-        /*ImageButton home = (ImageButton) findViewById(R.id.homeButton);
+        ImageButton home = (ImageButton) findViewById(R.id.homeButton);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
+
             }
-        });*/
+        });
 
         //별의 기억버튼
         ImageButton memory = (ImageButton) findViewById(R.id.memoryButton);
@@ -98,5 +101,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }
