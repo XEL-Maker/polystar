@@ -49,7 +49,7 @@ public class CalanderActivity extends AppCompatActivity {
         like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), BookmarkActivity.class);
                 startActivity(intent);
             }
         });

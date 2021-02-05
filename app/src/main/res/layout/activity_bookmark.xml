@@ -73,7 +73,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/homeButton"
                 android:layout_width="30dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="35dp"
@@ -86,7 +86,7 @@
                 app:srcCompat="@drawable/nav_4" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/memoryButton"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
@@ -98,7 +98,7 @@
                 app:srcCompat="@drawable/nav_1" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/starButton"
                 android:layout_width="35dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
@@ -110,7 +110,7 @@
                 app:srcCompat="@drawable/nav_3" />
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/likeButton"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
