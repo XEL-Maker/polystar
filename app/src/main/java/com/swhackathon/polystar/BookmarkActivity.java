@@ -53,5 +53,15 @@ public class BookmarkActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 사용자정보 가기 버튼
+        ImageButton profile_input = (ImageButton) findViewById(R.id.profile_input2);
+        profile_input.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), StarActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
