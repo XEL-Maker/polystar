@@ -78,13 +78,14 @@ public class BookmarkActivity extends AppCompatActivity {
         * 질문 연결하기
         * */
         ImageButton imageButton3 = findViewById(R.id.imageButton3);
-        imageButton2.setOnClickListener(new View.OnClickListener() {
+        imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), InputActivity.class);
                 //질문페이지로 연결
-                intent.putExtra("질문","좋아하는");
-                intent.putExtra("답","답");
+                //인텐트 전달
+                intent.putExtra("질문","좋아하는 물건과 그 이유는 무엇인가오?");
+                intent.putExtra("답","컴퓨터그냥");
                 startActivity(intent);
             }
         });

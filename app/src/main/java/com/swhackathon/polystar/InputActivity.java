@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -102,5 +103,18 @@ public class InputActivity extends AppCompatActivity {
 
             }
         });
+        /*
+        * intent 불러오기
+        * */
+        Intent intent= getIntent();
+        if(intent.hasExtra("질문")) {
+            String qmsg = intent.getStringExtra("질문");
+            String amsg = intent.getStringExtra("답");
+            TextView qtextView = (TextView) findViewById(R.id.questionTxt);
+            qtextView.setText(qmsg);
+            TextView atextView = (TextView) findViewById(R.id.resultTxt);
+            atextView.setText(amsg);
+        }
+
     }
 }
